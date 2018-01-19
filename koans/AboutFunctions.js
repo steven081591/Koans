@@ -98,15 +98,16 @@ describe("About Functions", function() {
       
   });
 
+  
   it("should use function body as a string", function() {
     var add = new Function("a", "b", "return a + b;");
     expect(add(1, 2)).toBe(3);
      
     var multiply = 1
-    };
-    expect(
-      multiply.toString()
-    ).toBe(1)
+  };
+  expect(
+    multiply.toString()
+  ).toBe(1)
 });
 
 //This doesn't work soooo I cheated ¯\_(ツ)_/¯

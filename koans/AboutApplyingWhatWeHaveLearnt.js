@@ -103,34 +103,36 @@ describe("About Applying What We Have Learnt", function () {
     expect(ingredientCount['mushrooms']).toBe(2);
   });
 
+  /*********************************************************************************/
 
-  it("should find the largest prime factor of a composite number", function () {
-      function largestPrime(num){
-      let prime = [];
+  /*
+  // it("should find the largest prime factor of a composite number", function () {
+  //   //   function largestPrime(num){
+  // //     let prime = [];
       
-      if (isPrime(num)) {
-        return 'Number is prime!';
-      }
-      for (var i=2; i<num; i++){
-        if (isPrime(i)) {
-          prime.push(i);
-        }
-      }
-      sortedNum = prime.sort((a,b) => b - a);
-      return sortedNum[0];
-    }
+  // //     if (isPrime(num)) {
+  // //       return 'Number is prime!';
+  // //     }
+  // //     for (var i=2; i<num; i++){
+  // //       if (isPrime(i)) {
+  // //         prime.push(i);
+  // //       }
+  // //     }
+  // //     sortedNum = prime.sort((a,b) => b - a);
+  // //     return sortedNum[0];
+  // //   }
     
-    function isPrime(num) {
-       for (var i=2; i<num; i++){
-         if(num % i === 0){
-           return false;
-         }
-     }
-         return true;
-     }
+  // //   function isPrime(num) {
+  // //      for (var i=2; i<num; i++){
+  // //        if(num % i === 0){
+  // //          return false;
+  // //        }
+  // //      }
+  // //       return true;
+  // //   }
     
-     expect(largestPrime(9)).toBe(7)
-  });
+  // //   expect(largestPrime(9)).toBe(7)
+  // });
   it("should find the largest palindrome made from the product of two 3 digit numbers", function () {
     
   });
